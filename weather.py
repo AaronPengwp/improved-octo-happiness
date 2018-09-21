@@ -4,7 +4,7 @@ import urllib.request
 import json
 from city import city
 
-cityname = input('你想查哪种个城市的天气？\n')
+cityname = input('你想查哪个城市的天气？\n')
 citycode = city.get(cityname)
 
 if citycode:
@@ -20,4 +20,4 @@ if citycode:
     except:
         print('查询失败')
 else:
-    print('没有长到该城市')
+    print('没有找到该城市')
